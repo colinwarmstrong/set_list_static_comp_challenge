@@ -1,0 +1,29 @@
+<!-- views/songs/index.erb -->
+<html>
+  <head>
+    <title>Songs Index</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link rel='stylesheet' href='style.css' type='text/css'>
+  </head>
+
+  <body>
+    <header>
+      <h1>Songs</h1>
+    </header>
+
+    <section>
+      <% @songs.each do |song| %>
+        <article>
+          <img class='song-picture' src='record_player.jpg' alt-'Record player'>
+          <div><%= song.title %></div>
+          <div><%= song.length %> seconds</div>
+          <div>Play Count: <%= song.play_count %></div>
+          <!-- <p>Playlist:<% if song.playlist %>
+            <%= song.playlist.name %>
+          <% end %></p> -->
+        </article>
+      <% end %>
+    </section>
+  </body>
+</html>

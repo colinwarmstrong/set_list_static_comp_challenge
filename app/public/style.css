@@ -1,0 +1,37 @@
+h1 {
+  font-family: 'Shrikhand', cursive;
+}
+
+header {
+  background-color: rgba(153, 255, 204, 0.25);
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  background-color: rgba(153, 255, 204, 0.25);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+article {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 15px;
+  background-color: rgba(232, 232, 232, 0.6);
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.song-picture {
+  margin: 10px;
+  border-radius: 50px;
+  height: 45%;
+  width: 45%;
+}
