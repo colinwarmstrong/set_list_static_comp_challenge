@@ -16,7 +16,7 @@
       <% @songs.each do |song| %>
         <article>
           <img class='song-picture' src='record_player.jpg' alt-'Record player'>
-          <div><%= song.title %></div>
+          <div class='song-title'><%= song.title %></div>
           <div><%= song.length %> seconds</div>
           <div>Play Count: <%= song.play_count %></div>
           <!-- <p>Playlist:<% if song.playlist %>
